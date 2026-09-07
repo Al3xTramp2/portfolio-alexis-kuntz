@@ -1,0 +1,7 @@
+# Version locale dynamique : contient du PHP, une base SQL et des données de test.
+version-finale-formulaire/
+
+# Fichiers locaux inutiles à la publication.
+.DS_Store
+Thumbs.db
+desktop.ini

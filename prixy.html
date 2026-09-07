@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prixy — Projet ResAppli, Git & travail en équipe | Alexis KUNTZ</title>
+
+    <meta
+      name="description"
+      content="Présentation de Prixy, solution web et applicative de gestion de locations de salles réalisée en groupe dans le cadre du projet ResAppli en BTS SIO."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          Alexis KUNTZ<span>.</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="competences.html">Compétences</a>
+          <a href="index.html#projects">Projets</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="index.html#contact">Me contacter</a>
+      </div>
+    </header>
+
+    <main class="prixy-page">
+      <section class="prixy-hero">
+        <div class="prixy-hero-grid" aria-hidden="true"></div>
+
+        <div class="container prixy-hero-content">
+          <a class="back-link" href="competences.html">
+            <span aria-hidden="true">←</span>
+            Retour au tableau des compétences
+          </a>
+
+          <div class="prixy-tags" aria-label="Caractéristiques du projet">
+            <span>Projet de groupe</span>
+            <span>BTS SIO</span>
+            <span>Git & GitLab</span>
+          </div>
+
+          <p class="prixy-kicker">Projet ResAppli</p>
+          <h1>Prixy</h1>
+          <p class="prixy-lead">
+            Une solution composée d'un site internet et d'une application pour
+            gérer la location de salles, notamment des salles des fêtes.
+          </p>
+
+          <div class="prixy-identity" aria-label="Différence entre ResAppli et Prixy">
+            <div>
+              <span>Le cadre pédagogique</span>
+              <strong>ResAppli</strong>
+            </div>
+            <span class="prixy-identity-arrow" aria-hidden="true">→</span>
+            <div>
+              <span>La solution réalisée</span>
+              <strong>Prixy</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container prixy-facts" aria-label="Informations essentielles sur Prixy">
+        <article>
+          <span>Contexte</span>
+          <strong>Projet de formation</strong>
+        </article>
+        <article>
+          <span>Organisation</span>
+          <strong>Réalisation en groupe</strong>
+        </article>
+        <article>
+          <span>Solution</span>
+          <strong>Site web & application</strong>
+        </article>
+        <article>
+          <span>Dépôt</span>
+          <strong>projet_prixy_g1</strong>
+        </article>
+      </section>
+
+      <section class="container prixy-overview" aria-labelledby="prixy-overview-title">
+        <div class="prixy-section-copy">
+          <span class="eyebrow">La solution informatique</span>
+          <h2 id="prixy-overview-title">
+            Gérer des locations de salles avec une solution commune
+          </h2>
+          <p>
+            Prixy répond à un besoin de gestion de locations de salles et de
+            lieux événementiels. La réalisation associait une interface web et
+            une partie applicative au sein d'un même projet mené collectivement.
+          </p>
+          <p>
+            Ce projet m'a demandé de comprendre une base de code partagée,
+            d'intégrer mes modifications à celles des autres membres du groupe
+            et de maintenir une version commune utilisable jusqu'aux phases de
+            déploiement.
+          </p>
+        </div>
+
+        <aside class="prixy-scope-card" aria-label="Périmètre confirmé du projet">
+          <span class="prixy-card-label">Périmètre confirmé</span>
+          <div class="prixy-scope-item">
+            <span aria-hidden="true">01</span>
+            <p><strong>Site internet</strong> intégré à la solution Prixy.</p>
+          </div>
+          <div class="prixy-scope-item">
+            <span aria-hidden="true">02</span>
+            <p><strong>Application</strong> développée dans le même projet.</p>
+          </div>
+          <div class="prixy-scope-item">
+            <span aria-hidden="true">03</span>
+            <p><strong>Locations de salles</strong> au cœur du besoin métier.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="prixy-collaboration" aria-labelledby="prixy-collaboration-title">
+        <div class="container">
+          <div class="prixy-section-heading">
+            <span class="eyebrow">Collaboration & versionnement</span>
+            <h2 id="prixy-collaboration-title">
+              Git utilisé dans les conditions d'un véritable projet d'équipe
+            </h2>
+            <p>
+              Le dépôt GitLab était le point commun entre les membres du
+              groupe. Il fallait récupérer, intégrer et publier les évolutions
+              tout en conservant un historique cohérent du projet.
+            </p>
+          </div>
+
+          <div class="prixy-workflow" aria-label="Cycle de collaboration Git">
+            <article>
+              <span>01</span>
+              <strong>Récupérer</strong>
+              <p>Synchroniser sa copie locale avec les modifications du groupe.</p>
+              <code>git pull</code>
+            </article>
+            <article>
+              <span>02</span>
+              <strong>Enregistrer</strong>
+              <p>Créer une étape claire dans l'historique avec un message précis.</p>
+              <code>git add → git commit</code>
+            </article>
+            <article>
+              <span>03</span>
+              <strong>Résoudre</strong>
+              <p>Traiter les conflits lorsque plusieurs modifications se rencontrent.</p>
+              <code>conflits Git</code>
+            </article>
+            <article>
+              <span>04</span>
+              <strong>Partager</strong>
+              <p>Envoyer ses commits vers le dépôt GitLab utilisé par le groupe.</p>
+              <code>git push</code>
+            </article>
+            <article>
+              <span>05</span>
+              <strong>Déployer</strong>
+              <p>Mettre à disposition une version exploitable de la solution.</p>
+              <code>mise en ligne</code>
+            </article>
+          </div>
+
+          <div class="prixy-git-notes">
+            <article>
+              <strong>Un dépôt plus propre</strong>
+              <p>
+                Les fichiers générés par l'environnement de développement,
+                notamment le dossier <code>.idea</code>, ont nécessité une
+                gestion attentive pour ne pas perturber le dépôt partagé.
+              </p>
+            </article>
+            <article>
+              <strong>Un accès plus fiable</strong>
+              <p>
+                La configuration de GitLab a évolué d'une connexion HTTPS vers
+                SSH afin de fiabiliser l'accès au dépôt distant.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container prixy-evolution" aria-labelledby="prixy-evolution-title">
+        <div class="prixy-section-copy">
+          <span class="eyebrow">Évolution du projet</span>
+          <h2 id="prixy-evolution-title">S'adapter aux changements techniques</h2>
+          <p>
+            La solution a évolué pendant sa réalisation. Certains choix
+            techniques ont changé et le groupe a dû poursuivre le développement
+            avec les décisions finalement retenues, sans perdre la cohérence du
+            travail déjà produit.
+          </p>
+        </div>
+
+        <div class="prixy-stack-status">
+          <span>Version finale</span>
+          <strong>Technologies à confirmer</strong>
+          <p>
+            Cette partie sera complétée après récupération de la dernière
+            version. Les anciennes technologies abandonnées ne seront pas
+            présentées comme faisant partie du résultat final.
+          </p>
+        </div>
+      </section>
+
+      <section class="prixy-skills" aria-labelledby="prixy-skills-title">
+        <div class="container">
+          <div class="prixy-section-heading">
+            <span class="eyebrow">Compétences BTS SIO</span>
+            <h2 id="prixy-skills-title">Ce que Prixy m'a permis de mettre en pratique</h2>
+          </div>
+
+          <div class="prixy-skills-grid">
+            <article>
+              <span>C</span>
+              <h3>Gérer le patrimoine informatique</h3>
+              <p>
+                Versionner le code, maintenir le dépôt partagé et contrôler les
+                fichiers réellement utiles au projet.
+              </p>
+            </article>
+            <article>
+              <span>F</span>
+              <h3>Travailler en mode projet</h3>
+              <p>
+                Coordonner les contributions, gérer les changements et avancer
+                collectivement vers une version déployable.
+              </p>
+            </article>
+            <article>
+              <span>DEV</span>
+              <h3>Participer au développement</h3>
+              <p>
+                Comprendre une réalisation commune, intégrer son travail et
+                corriger les problèmes rencontrés lors de l'assemblage.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container prixy-challenges" aria-labelledby="prixy-challenges-title">
+        <div class="prixy-section-heading">
+          <span class="eyebrow">Difficultés rencontrées</span>
+          <h2 id="prixy-challenges-title">Des problèmes concrets à analyser et résoudre</h2>
+        </div>
+
+        <div class="prixy-challenges-grid">
+          <article><span>01</span><p>Conflits Git entre des modifications concurrentes.</p></article>
+          <article><span>02</span><p>Synchronisation des versions locales avec le dépôt GitLab.</p></article>
+          <article><span>03</span><p>Fichiers <code>.idea</code> indésirables dans le dépôt.</p></article>
+          <article><span>04</span><p>Configuration de l'accès GitLab en HTTPS puis en SSH.</p></article>
+          <article><span>05</span><p>Adaptation aux changements techniques pendant le projet.</p></article>
+          <article><span>06</span><p>Intégration et déploiement d'une version commune.</p></article>
+        </div>
+      </section>
+
+      <section class="container prixy-evidence" aria-labelledby="prixy-evidence-title">
+        <div class="prixy-section-heading">
+          <span class="eyebrow">Preuves du projet</span>
+          <h2 id="prixy-evidence-title">Une section prête à accueillir la version finale</h2>
+          <p>
+            Les preuves seront ajoutées après récupération des fichiers du projet.
+          </p>
+        </div>
+
+        <div class="prixy-evidence-grid">
+          <article>
+            <span>À ajouter</span>
+            <strong>Site & application</strong>
+            <p>Captures des écrans et des fonctionnalités finales.</p>
+          </article>
+          <article>
+            <span>À ajouter</span>
+            <strong>Dépôt GitLab</strong>
+            <p>Historique des commits et organisation du projet.</p>
+          </article>
+          <article>
+            <span>À ajouter</span>
+            <strong>Code & déploiement</strong>
+            <p>Extraits pertinents et preuves des versions déployées.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container prixy-cta">
+        <div>
+          <span class="eyebrow">Tableau de synthèse</span>
+          <h2>Retrouver ResAppli / Prixy dans mes compétences</h2>
+        </div>
+        <a class="btn primary" href="competences.html">
+          Retour au tableau des compétences
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        © <span id="year"></span>
+        Alexis KUNTZ — Tous droits réservés.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
