@@ -1,0 +1,1 @@
+Démonstration statique du formulaire.
