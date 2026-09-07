@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire | Alexis KUNTZ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="form-card">
+        <div class="form-header">
+          <p class="eyebrow">Projet scolaire</p>
+          <h1>Formulaire de contact</h1>
+          <p class="subtitle">
+            Un formulaire simple et fonctionnel réalisé en HTML, CSS et JavaScript.
+          </p>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="field-row">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" />
+            <small class="error-message" data-error-for="nom"></small>
+          </div>
+
+          <div class="field-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" />
+            <small class="error-message" data-error-for="email"></small>
+          </div>
+
+          <div class="field-row">
+            <label for="objet">Objet</label>
+            <input type="text" id="objet" name="objet" placeholder="Objet du message" />
+            <small class="error-message" data-error-for="objet"></small>
+          </div>
+
+          <div class="field-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message..."></textarea>
+            <small class="error-message" data-error-for="message"></small>
+          </div>
+
+          <label class="checkbox-row" for="accept">
+            <input type="checkbox" id="accept" name="accept" />
+            <span>J’accepte que mes données soient traitées pour ce formulaire.</span>
+          </label>
+          <small class="error-message" data-error-for="accept"></small>
+
+          <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+
+        <div id="successMessage" class="success-message" aria-live="polite">
+          Votre formulaire a bien été envoyé.
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
