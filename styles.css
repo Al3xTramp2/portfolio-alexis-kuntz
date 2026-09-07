@@ -430,7 +430,7 @@ img {
       rgba(10, 10, 11, 0.38),
       rgba(10, 10, 11, 0.58)
     ),
-    url("../image.png");
+    url("assets/ktm.png");
 
   background-size: cover;
 
