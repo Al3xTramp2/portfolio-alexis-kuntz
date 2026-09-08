@@ -57,7 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
       (currentPage === "competences.html" ||
         currentPage === "certifications.html" ||
         currentPage === "holocibo.html" ||
-        currentPage === "prixy.html") &&
+        currentPage === "prixy.html" ||
+        currentPage === "rts-xml.html") &&
       linkPage === "competences.html"
     ) {
       link.classList.add("active");

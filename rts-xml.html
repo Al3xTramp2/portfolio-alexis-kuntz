@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Générateur XML Python pour la RTS | Alexis KUNTZ</title>
+    <meta
+      name="description"
+      content="Présentation d'une application Python avec interface Tkinter, développée et déployée à la Radio Télévision Suisse pour générer automatiquement des fichiers XML depuis un fichier Excel."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a href="index.html" class="brand">Alexis KUNTZ<span>.</span></a>
+
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="competences.html">Compétences</a>
+          <a href="index.html#projects">Projets</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="index.html#contact">Me contacter</a>
+      </div>
+    </header>
+
+    <main class="rts-app-page">
+      <section class="rts-app-hero">
+        <div class="rts-app-hero-grid" aria-hidden="true"></div>
+
+        <div class="container rts-app-hero-content">
+          <a class="back-link" href="competences.html">
+            <span aria-hidden="true">←</span>
+            Retour au tableau des compétences
+          </a>
+
+          <div class="rts-app-tags" aria-label="Technologies utilisées">
+            <span>Python</span>
+            <span>Tkinter</span>
+            <span>pandas</span>
+            <span>Excel → XML</span>
+          </div>
+
+          <div class="rts-app-hero-layout">
+            <div>
+              <p class="rts-app-kicker">Application développée en stage</p>
+              <h1>Un générateur XML conçu et déployé <em>pour la RTS</em></h1>
+              <p class="rts-app-lead">
+                Automatiser la transformation d'un tableau Excel en fichiers XML
+                structurés grâce à une application de bureau simple, fiable et
+                directement utilisable par les équipes de la Radio Télévision Suisse.
+              </p>
+
+              <div class="rts-app-status">
+                <span aria-hidden="true"></span>
+                Solution mise en service et toujours utilisée à la RTS
+              </div>
+            </div>
+
+            <div class="rts-app-window" aria-label="Aperçu de l'interface du générateur XML">
+              <div class="rts-app-window-bar">
+                <span></span><span></span><span></span>
+                <strong>Créateur XML ALKNZ</strong>
+              </div>
+              <div class="rts-app-window-body">
+                <p>Générateur de fichiers XML</p>
+                <div>📄 Choisir un fichier Excel</div>
+                <div>📁 Choisir le dossier de sortie</div>
+                <button type="button" tabindex="-1">Générer les XML</button>
+                <small>Traitement automatisé ligne par ligne</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container rts-app-facts" aria-label="Informations essentielles">
+        <article><span>Contexte</span><strong>Stage de BTS SIO</strong></article>
+        <article><span>Organisation</span><strong>Radio Télévision Suisse</strong></article>
+        <article><span>Technologie</span><strong>Application Python</strong></article>
+        <article><span>Résultat</span><strong>Outil utilisé en conditions réelles</strong></article>
+      </section>
+
+      <section class="container rts-app-overview" aria-labelledby="rts-overview-title">
+        <div class="rts-app-section-copy">
+          <span class="eyebrow">Le besoin opérationnel</span>
+          <h2 id="rts-overview-title">Remplacer une génération manuelle par un traitement automatisé</h2>
+          <p>
+            Le point de départ était un fichier Excel contenant les informations
+            nécessaires à un processus d'archivage : identifiants, chemin du dossier,
+            commentaire et résolution. Chaque ligne valide devait être transformée
+            en un fichier XML distinct respectant une structure précise.
+          </p>
+          <p>
+            L'application réduit les manipulations répétitives et les risques d'erreur.
+            L'utilisateur sélectionne son fichier source et son dossier de destination ;
+            le programme prend ensuite en charge les contrôles et la création des fichiers.
+          </p>
+        </div>
+
+        <aside class="rts-app-impact-card">
+          <span class="rts-app-card-label">Valeur apportée</span>
+          <div><strong>Automatiser</strong><p>Une création répétitive de fichiers structurés.</p></div>
+          <div><strong>Sécuriser</strong><p>Les champs obligatoires avant toute génération.</p></div>
+          <div><strong>Simplifier</strong><p>L'utilisation grâce à une interface graphique.</p></div>
+        </aside>
+      </section>
+
+      <section class="rts-app-workflow" aria-labelledby="rts-workflow-title">
+        <div class="container">
+          <div class="rts-app-section-heading">
+            <span class="eyebrow">Fonctionnement</span>
+            <h2 id="rts-workflow-title">De la feuille Excel aux fichiers XML en quatre étapes</h2>
+          </div>
+
+          <div class="rts-app-steps">
+            <article><span>01</span><h3>Sélectionner</h3><p>Choisir un fichier Excel au format <code>.xlsx</code> depuis l'interface.</p></article>
+            <article><span>02</span><h3>Contrôler</h3><p>Lire les lignes et ignorer celles qui ne possèdent pas de GUID ou d'UMID.</p></article>
+            <article><span>03</span><h3>Structurer</h3><p>Insérer les valeurs dans un document XML encodé en UTF-8.</p></article>
+            <article><span>04</span><h3>Restituer</h3><p>Créer un fichier par ligne puis afficher le nombre de fichiers générés.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container rts-app-technical" aria-labelledby="rts-technical-title">
+        <div class="rts-app-section-copy">
+          <span class="eyebrow">Conception technique</span>
+          <h2 id="rts-technical-title">Une petite application pensée pour être comprise et utilisée facilement</h2>
+
+          <div class="rts-app-tech-list">
+            <article><strong>pandas</strong><p>Lecture du classeur Excel et parcours de chaque ligne.</p></article>
+            <article><strong>Tkinter</strong><p>Interface graphique pour éviter l'utilisation d'une ligne de commande.</p></article>
+            <article><strong>pathlib</strong><p>Gestion claire du dossier de sortie et des noms de fichiers.</p></article>
+            <article><strong>Contrôles</strong><p>Détection des valeurs absentes et messages d'erreur explicites.</p></article>
+          </div>
+        </div>
+
+        <div class="rts-app-code-card" aria-label="Extrait représentatif du code Python">
+          <div class="rts-app-code-title"><span>python</span><strong>generation_xml.py</strong></div>
+          <pre><code><span class="code-keyword">df</span> = pd.read_excel(excel_file)
+
+<span class="code-keyword">for</span> _, row <span class="code-keyword">in</span> df.iterrows():
+    guid = <span class="code-string">""</span> <span class="code-keyword">if</span> pd.isna(row[<span class="code-string">"GUID"</span>]) <span class="code-keyword">else</span> str(row[<span class="code-string">"GUID"</span>]).strip()
+    umid = <span class="code-string">""</span> <span class="code-keyword">if</span> pd.isna(row[<span class="code-string">"UMID"</span>]) <span class="code-keyword">else</span> str(row[<span class="code-string">"UMID"</span>]).strip()
+
+    <span class="code-keyword">if not</span> guid <span class="code-keyword">or not</span> umid:
+        <span class="code-keyword">continue</span>
+
+    nom_fichier = <span class="code-string">f"{guid}_{umid}.xml"</span>
+    fichier_xml = dossier_sortie / nom_fichier
+    <span class="code-keyword">with</span> open(fichier_xml, <span class="code-string">"w"</span>, encoding=<span class="code-string">"utf-8"</span>) <span class="code-keyword">as</span> fichier:
+        fichier.write(xml_content)</code></pre>
+        </div>
+      </section>
+
+      <section class="rts-app-adoption" aria-labelledby="rts-adoption-title">
+        <div class="container rts-app-adoption-grid">
+          <div>
+            <span class="eyebrow">Mise en service</span>
+            <h2 id="rts-adoption-title">Un livrable de stage devenu un outil réellement utilisé</h2>
+          </div>
+          <div>
+            <p>
+              Le projet ne s'est pas arrêté à un prototype : l'application a été
+              mise à disposition de la RTS et continue d'être utilisée. Cette adoption
+              montre que la solution répond à un besoin concret et que son fonctionnement
+              est suffisamment accessible pour s'intégrer au travail quotidien.
+            </p>
+            <p>
+              Les données manipulées restent dans l'environnement de l'utilisateur.
+              Aucun fichier métier ni aucune donnée interne de la RTS n'est présenté
+              dans ce portfolio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container rts-app-skills" aria-labelledby="rts-skills-title">
+        <div class="rts-app-section-heading">
+          <span class="eyebrow">Compétences BTS SIO</span>
+          <h2 id="rts-skills-title">Deux compétences mobilisées par une réalisation concrète</h2>
+        </div>
+
+        <div class="rts-app-skills-grid">
+          <article>
+            <span>F</span>
+            <h3>Travailler en mode projet</h3>
+            <p>
+              Analyser le besoin, définir les données d'entrée et le résultat attendu,
+              découper la réalisation puis ajuster l'outil jusqu'à obtenir une version utilisable.
+            </p>
+          </article>
+          <article>
+            <span>G</span>
+            <h3>Mettre à disposition un service informatique</h3>
+            <p>
+              Contrôler la génération des fichiers, valider le comportement de l'interface
+              et livrer une application adoptée par ses utilisateurs à la RTS.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container rts-app-cta">
+        <div>
+          <span class="eyebrow">Tableau de synthèse</span>
+          <h2>Retrouver cette réalisation dans mes compétences</h2>
+        </div>
+        <a class="btn primary" href="competences.html">Retour au tableau</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> Alexis KUNTZ — Tous droits réservés.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
