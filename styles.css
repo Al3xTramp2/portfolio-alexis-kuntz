@@ -573,9 +573,128 @@ img {
   background:
     linear-gradient(
       135deg,
-      rgba(255, 122, 0, 0.22),
-      rgba(255, 211, 122, 0.1)
+      rgba(15, 23, 42, 0.98),
+      rgba(30, 41, 59, 0.94)
     );
+
+  display: grid;
+
+  place-items: center;
+
+  padding: 1rem;
+
+  overflow: hidden;
+}
+
+
+.form-preview-window {
+  width: min(100%, 310px);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: rgba(17, 24, 39, 0.96);
+
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.38);
+
+  transform: rotate(-1.5deg);
+}
+
+
+.form-preview-bar {
+  display: flex;
+
+  gap: 5px;
+
+  padding: 7px 9px;
+
+  background: rgba(255, 255, 255, 0.055);
+}
+
+
+.form-preview-bar span {
+  width: 6px;
+
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.28);
+}
+
+
+.form-preview-bar span:first-child {
+  background: var(--primary);
+}
+
+
+.form-preview-content {
+  display: grid;
+
+  gap: 7px;
+
+  padding: 13px 16px 15px;
+}
+
+
+.form-preview-content small {
+  color: #7c9cff;
+
+  font-size: 0.48rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+
+.form-preview-content strong {
+  color: #f8fafc;
+
+  font-size: 0.82rem;
+}
+
+
+.form-preview-fields {
+  display: grid;
+
+  gap: 5px;
+}
+
+
+.form-preview-fields i {
+  display: block;
+
+  height: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 4px;
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+
+.form-preview-fields i.is-message {
+  height: 25px;
+}
+
+
+.form-preview-content b {
+  justify-self: start;
+
+  padding: 4px 15px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #7c9cff, #5f7df6);
+
+  color: white;
+
+  font-size: 0.52rem;
 }
 
 
